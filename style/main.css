@@ -131,7 +131,27 @@ body {
   color: #43a5cf;
   font-size: 0.75rem;
   margin-top: 30rem;
+  margin-bottom: 30rem;
+}
+@media (min-width: 768px) {
+  .main__title {
+    font-size: 1.5rem;
+    margin-top: 50rem;
+    margin-bottom: 50rem;
+  }
 }
 .main__text-body {
-  margin-top: 30rem;
+  text-align: center;
+  letter-spacing: 2px;
+}
+@media (min-width: 768px) {
+  .main__text-body {
+    font-size: 2rem;
+    width: 70%;
+  }
+}
+@media (min-width: 1280px) {
+  .main__text-body {
+    width: 50%;
+  }
 }/*# sourceMappingURL=main.css.map */

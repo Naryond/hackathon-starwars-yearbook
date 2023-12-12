@@ -15,7 +15,10 @@ class StarWarsApi {
     const response = await axios.get(`${this.url}${this.people}`);
     const data = response.data.results;
 
+
+
     let cardContainerEl = document.querySelector('.card__container');
+
 
     for (let i = 0; i < data.length; i++) {
       // Creating an article for every Character, applying a class to it, append it
@@ -66,8 +69,3 @@ const starWars = new StarWarsApi(url, people);
 
 starWars.requestApi();
 
-// Scrolling function
-const cardContainerID = document.getElementById('scrollMe');
-setTimeout(() => {
-  cardContainerID.scrollIntoView({ behavior: 'smooth' });
-}, 2000);
