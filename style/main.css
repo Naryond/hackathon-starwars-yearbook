@@ -50,16 +50,37 @@ body {
 }
 .nav__list-item {
   color: #ffe81f;
-  -webkit-text-decoration: 0;
-          text-decoration: 0;
+  text-decoration: 0;
 }
 
 .card {
   color: #ffe81f;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  background-color: rgba(255, 255, 255, 0.3);
+  padding: 1rem;
+  margin: 1rem;
+  border-radius: 5px;
+}
+.card__logo-name {
+  text-align: center;
+}
+.card__logo-image {
+  width: 5rem;
+}
+.card__subcontainer {
+  display: flex;
 }
 
-.main-container {
+.main__container {
   background-image: url(../../assets/images/space-background.jpeg);
   background-position: center;
-  background-size: cover;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  padding: 0 1rem;
+}
+.main__text {
+  color: #ffe81f;
 }/*# sourceMappingURL=main.css.map */
