@@ -1,5 +1,6 @@
-@use "./variables" as *;
-@use "./typography";
+@use './variables' as *;
+@use './mixins' as *;
+@use './typography';
 
 .header {
   background-color: $primary-background-color;

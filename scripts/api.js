@@ -33,7 +33,7 @@ class StarWarsApi {
       cardContainerEl.appendChild(cardEl);
 
       let nameEl = document.createElement('h3');
-      nameEl.classList.add('card__logo-name');
+      nameEl.classList.add('card__name');
       nameEl.innerHTML = data[i].name;
       cardEl.appendChild(nameEl);
 

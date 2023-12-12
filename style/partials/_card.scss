@@ -1,4 +1,5 @@
-@use "./variables" as *;
+@use './variables' as *;
+@use './mixins' as *;
 
 .card {
   color: $primary-font-color;
@@ -9,20 +10,46 @@
   padding: 1rem;
   margin: 1rem;
   border-radius: 7px;
-  &__logo-name {
+
+  &__subcontainer {
+    @include tablet {
+      display: flex;
+      flex-direction: column;
+    }
+  }
+
+  &__logo {
+    @include tablet {
+      display: flex;
+      justify-content: center;
+    }
+  }
+
+  &__name {
     text-align: center;
     font-family: SF-distant-Outline;
     font-size: 1.2rem;
   }
+
   &__logo-image {
     width: 6rem;
     margin: 0.5rem;
   }
+
   &__subcontainer {
     display: flex;
   }
+
   &__description {
     padding: 0.5rem;
     letter-spacing: 1.5px;
+  }
+
+  &__container {
+    @include tablet {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+    }
   }
 }
