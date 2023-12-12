@@ -1,1 +1,18 @@
-/*# sourceMappingURL=main.css.map */
+@font-face {
+  font-family: Star-Wars;
+  src: url(../../assets/font/StarJedi-DGRW.ttf) format "ttf";
+  font-style: normal;
+  font-weight: 400;
+}
+@font-face {
+  font-family: Star-Wars-Outline;
+  src: url(../../assets/font/StarJediOutline-y0xm.ttf) format "ttf";
+  font-style: normal;
+  font-weight: 400;
+}
+@font-face {
+  font-family: Star-Wars-Droid;
+  src: url(../../assets/font/DroidobeshDepot-gxmVE.otf) format "otf";
+  font-style: normal;
+  font-weight: 400;
+}/*# sourceMappingURL=main.css.map */
