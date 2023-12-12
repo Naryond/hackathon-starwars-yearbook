@@ -1,8 +1,8 @@
 // Base url
-const url = "https://swapi.dev/api/";
+const url = 'https://swapi.dev/api/';
 
 // Delving into people section
-const people = "people/";
+const people = 'people/';
 
 class StarWarsApi {
   constructor(url, people) {
@@ -17,33 +17,43 @@ class StarWarsApi {
 
     console.log(data);
 
-    let cardContainerEl = document.querySelector(".card__container");
+    let cardContainerEl = document.querySelector('.card__container');
 
     for (let i = 0; i < data.length; i++) {
       // Creating an article for every Character, applying a class to it, append it
-      let cardEl = document.createElement("article");
-      cardEl.classList.add("card");
+      let cardEl = document.createElement('article');
+      cardEl.classList.add('card');
       cardContainerEl.appendChild(cardEl);
 
       // Subcontainers inside the article
-      let logoSideEL = document.createElement("div");
-      logoSideEL.classList.add("card__logo");
-      logoSideEL.innerHTML = data[i].name;
+      let logoSideEL = document.createElement('div');
+      logoSideEL.classList.add('card__logo');
       cardEl.appendChild(logoSideEL);
 
-      let descriptionSideEL = document.createElement("div");
-      descriptionSideEL.classList.add("card__description");
+      let descriptionSideEL = document.createElement('div');
+      descriptionSideEL.classList.add('card__description');
       cardEl.appendChild(descriptionSideEL);
 
-      //Dividing the description block
+      // Subcontainers inside the logo
+      let photoEl = document.createElement('img');
+      photoEl.classList.add('card__logo-image');
+      // pic src
+      logoSideEL.append(photoEl);
 
-      let genderEl = document.createElement("p");
-      genderEl.classList.add("card__description-gender");
+      let nameEl = document.createElement('h3');
+      nameEl.classList.add('card__logo-name');
+      nameEl.innerHTML = data[i].name;
+      logoSideEL.append(nameEl);
+
+      // Dividing the description block
+
+      let genderEl = document.createElement('p');
+      genderEl.classList.add('card__description-gender');
       genderEl.innerHTML = `Gender: ${data[i].gender}`;
       descriptionSideEL.append(genderEl);
 
-      let birthdayEl = document.createElement("p");
-      birthdayEl.classList.add("card__description-birth");
+      let birthdayEl = document.createElement('p');
+      birthdayEl.classList.add('card__description-birth');
       birthdayEl.innerHTML = `Year of Birth: ${data[i].birth_year}`;
       descriptionSideEL.append(birthdayEl);
     }

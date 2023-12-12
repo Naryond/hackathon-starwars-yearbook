@@ -50,11 +50,19 @@ body {
 }
 .nav__list-item {
   color: #ffe81f;
-  text-decoration: 0;
+  -webkit-text-decoration: 0;
+          text-decoration: 0;
+}
+
+.card {
+  color: #ffe81f;
 }
 
 .main-container {
   background-image: url(../../assets/images/space-background.jpeg);
   background-position: center;
   background-size: cover;
+  display: flex;
+  justify-content: center;
+  padding: 0 1rem;
 }/*# sourceMappingURL=main.css.map */
