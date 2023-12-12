@@ -22,11 +22,24 @@ const requestApi = async () => {
     // Subcontainers inside the article
     let logoSideEL = document.createElement('div');
     logoSideEL.classList.add('card__logo');
+    logoSideEL.innerHTML = data[i].name;
     cardEl.appendChild(logoSideEL);
 
     let descriptionSideEL = document.createElement('div');
     descriptionSideEL.classList.add('card__description');
     cardEl.appendChild(descriptionSideEL);
+
+    //Dividing the description block
+
+    let genderEl = document.createElement('p');
+    genderEl.classList.add('card__description-gender');
+    genderEl.innerHTML = `Gender: ${data[i].gender}`;
+    descriptionSideEL.append(genderEl);
+
+    let birthdayEl = document.createElement('p');
+    birthdayEl.classList.add('card__description-birth');
+    birthdayEl.innerHTML = `Year of Birth: ${data[i].birth_year}`;
+    descriptionSideEL.append(birthdayEl);
   }
 };
 
