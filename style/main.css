@@ -132,6 +132,7 @@ body {
   font-size: 0.75rem;
   margin-top: 30rem;
   margin-bottom: 30rem;
+  text-align: center;
 }
 @media (min-width: 768px) {
   .main__title {

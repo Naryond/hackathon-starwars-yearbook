@@ -1,6 +1,6 @@
-@use "./variables" as *;
-@use "./mixins" as *;
-@use "./card";
+@use './variables' as *;
+@use './mixins' as *;
+@use './card';
 
 .main {
   &__container {
@@ -19,7 +19,6 @@
     align-items: center;
     align-self: center;
     width: 75%;
-
     color: $primary-font-color;
   }
   &__title {
@@ -27,6 +26,7 @@
     font-size: 0.75rem;
     margin-top: 30rem;
     margin-bottom: 30rem;
+    text-align: center;
 
     @include tablet {
       font-size: 1.5rem;
