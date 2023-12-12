@@ -37,7 +37,7 @@ class StarWarsApi {
       // Subcontainers inside the logo
       let photoEl = document.createElement('img');
       photoEl.classList.add('card__logo-image');
-      // pic src
+      photoEl.setAttribute('src', `../assets/images/people/${i + 1}.jpg`);
       logoSideEL.append(photoEl);
 
       let nameEl = document.createElement('h3');
