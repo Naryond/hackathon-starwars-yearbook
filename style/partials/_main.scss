@@ -4,14 +4,30 @@
 
 .main {
   &__container {
-    background-image: url(../../assets/images/space-background.jpeg);
+    background-image: url(../../assets/images/space-background.png);
     background-position: center;
     display: flex;
     justify-content: center;
     flex-direction: column;
     padding: 0 1rem;
+    letter-spacing: 2px;
   }
   &__text {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    align-self: center;
+    width: 75%;
+
     color: $primary-font-color;
+  }
+  &__title {
+    color: #43a5cf;
+    font-size: 0.75rem;
+    margin-top: 30rem;
+  }
+  &__text-body {
+    margin-top: 30rem;
   }
 }
