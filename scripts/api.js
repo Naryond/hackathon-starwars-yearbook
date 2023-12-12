@@ -1,12 +1,13 @@
 // Base url
 
-const url = 'https://swapi.dev/api';
+const url = 'https://swapi.dev/api/';
 
-const people = 'people.results';
+const people = 'people/';
 
 const requestApi = async () => {
   const response = await axios.get(`${url}${people}`);
-  console.log(response);
+  const data = response.data.results;
+  console.log(data);
 };
 
 requestApi();
