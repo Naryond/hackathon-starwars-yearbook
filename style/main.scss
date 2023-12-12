@@ -1,8 +1,8 @@
-@use "../style/partials/reset";
-@use "../style/partials/typography";
-@use "../style/partials/variables" as *;
+@use '../style/partials/reset';
+@use '../style/partials/typography';
+@use '../style/partials/variables' as *;
 
 // Components
 
-@use "./partials/header";
-@use "./partials/main";
+@use './partials/header';
+@use './partials/main';
