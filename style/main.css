@@ -28,6 +28,12 @@ body {
   font-style: normal;
   font-weight: 400;
 }
+@font-face {
+  font-family: SF-distant-Outline;
+  src: url(../../assets/font/SF\ Distant\ Galaxy\ Outline.ttf), format "ttf";
+  font-style: normal;
+  font-weight: 400;
+}
 .header {
   background-color: #000000;
 }
@@ -58,19 +64,26 @@ body {
   display: flex;
   justify-content: center;
   flex-direction: column;
-  background-color: rgba(255, 255, 255, 0.3);
+  background-color: rgba(0, 0, 0, 0.6);
   padding: 1rem;
   margin: 1rem;
-  border-radius: 5px;
+  border-radius: 7px;
 }
 .card__logo-name {
   text-align: center;
+  font-family: SF-distant-Outline;
+  font-size: 1.2rem;
 }
 .card__logo-image {
-  width: 5rem;
+  width: 6rem;
+  margin: 0.5rem;
 }
 .card__subcontainer {
   display: flex;
+}
+.card__description {
+  padding: 0.5rem;
+  letter-spacing: 1.5px;
 }
 
 .main__container {
