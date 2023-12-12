@@ -1,18 +1,60 @@
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: SF-distant;
+  margin: 0;
+  padding: 0;
+}
+
 @font-face {
-  font-family: Star-Wars;
-  src: url(../../assets/font/StarJedi-DGRW.ttf) format "ttf";
+  font-family: SF-distant;
+  src: url(../assets/font/SF\ Distant\ Galaxy.ttf), format "ttf";
   font-style: normal;
   font-weight: 400;
 }
 @font-face {
-  font-family: Star-Wars-Outline;
-  src: url(../../assets/font/StarJediOutline-y0xm.ttf) format "ttf";
-  font-style: normal;
+  font-family: SF-distant;
+  src: url(../../assets/font/SF\ Distant\ Galaxy\ Italic.ttf), format "ttf";
+  font-style: italic;
   font-weight: 400;
 }
 @font-face {
-  font-family: Star-Wars-Droid;
-  src: url(../../assets/font/DroidobeshDepot-gxmVE.otf) format "otf";
+  font-family: SF-distant-symbol;
+  src: url(../../assets/font/SF\ Distant\ Galaxy\ Symbols.ttf), format "ttf";
   font-style: normal;
   font-weight: 400;
+}
+.header {
+  background-color: #000000;
+}
+.header__title {
+  color: #ffe81f;
+  font-family: SF-distant;
+  font-style: normal;
+  margin: 0;
+  font-size: 2.5rem;
+  text-align: center;
+  padding: 1rem 0;
+}
+
+.nav__list {
+  list-style: none;
+  display: flex;
+  justify-content: space-around;
+  padding: 0.5rem 0;
+  margin: 0;
+}
+.nav__list-item {
+  color: #ffe81f;
+  text-decoration: 0;
+}
+
+.main-container {
+  background-image: url(../../assets/images/space-background.jpeg);
+  background-position: center;
+  background-size: cover;
 }/*# sourceMappingURL=main.css.map */

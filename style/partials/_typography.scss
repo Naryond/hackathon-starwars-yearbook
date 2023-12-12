@@ -1,20 +1,20 @@
 @font-face {
-  font-family: Star-Wars;
-  src: url(../../assets/font/StarJedi-DGRW.ttf) format ("ttf");
+  font-family: SF-distant;
+  src: url(../assets/font/SF\ Distant\ Galaxy.ttf), format ("ttf");
   font-style: normal;
   font-weight: 400;
 }
 
 @font-face {
-  font-family: Star-Wars-Outline;
-  src: url(../../assets/font/StarJediOutline-y0xm.ttf) format ("ttf");
-  font-style: normal;
+  font-family: SF-distant;
+  src: url(../../assets/font/SF\ Distant\ Galaxy\ Italic.ttf), format ("ttf");
+  font-style: italic;
   font-weight: 400;
 }
 
 @font-face {
-  font-family: Star-Wars-Droid;
-  src: url(../../assets/font/DroidobeshDepot-gxmVE.otf) format ("otf");
+  font-family: SF-distant-symbol;
+  src: url(../../assets/font/SF\ Distant\ Galaxy\ Symbols.ttf), format ("ttf");
   font-style: normal;
   font-weight: 400;
 }
