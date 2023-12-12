@@ -26,8 +26,23 @@
     color: #43a5cf;
     font-size: 0.75rem;
     margin-top: 30rem;
+    margin-bottom: 30rem;
+
+    @include tablet {
+      font-size: 1.5rem;
+      margin-top: 50rem;
+      margin-bottom: 50rem;
+    }
   }
   &__text-body {
-    margin-top: 30rem;
+    text-align: center;
+    letter-spacing: 2px;
+    @include tablet {
+      font-size: 2rem;
+      width: 70%;
+    }
+    @include desktop {
+      width: 50%;
+    }
   }
 }

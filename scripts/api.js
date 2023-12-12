@@ -15,13 +15,6 @@ class StarWarsApi {
     const response = await axios.get(`${this.url}${this.people}`);
     const data = response.data.results;
 
-    // for(let i = 1; i < 8 ;i++){
-
-    // const response = await axios.get(`${this.url}${this.people}/?page=${i}`);
-    // const data += response.data.results;
-
-    // }
-
     console.log(data);
 
     let cardContainerEl = document.querySelector(".card__container");
@@ -75,7 +68,7 @@ const starWars = new StarWarsApi(url, people);
 
 starWars.requestApi();
 
-const cardContainerID = document.getElementById("scrollMe");
-setTimeout(() => {
-  cardContainerID.scrollIntoView({ behavior: "smooth" });
-}, 2000);
+// const cardContainerID = document.getElementById("scrollMe");
+// setTimeout(() => {
+//   cardContainerID.scrollIntoView({ behavior: "smooth" });
+// }, 4000);
