@@ -50,29 +50,16 @@ body {
 }
 .nav__list-item {
   color: #ffe81f;
-  text-decoration: 0;
+  -webkit-text-decoration: 0;
+          text-decoration: 0;
+}
+
+.card {
+  color: #ffe81f;
 }
 
 .main-container {
   background-image: url(../../assets/images/space-background.jpeg);
   background-position: center;
   background-size: cover;
-}
-
-.scroll {
-  position: relative;
-  top: 99999px;
-  transform-origin: 50% 100%;
-  animation: crawl 60s linear;
-}
-
-@keyframes crawl {
-  0% {
-    top: -100px;
-    transform: rotateX(20deg) translateZ(0);
-  }
-  100% {
-    top: -6000px;
-    transform: rotateX(25deg) translateZ(-2500px);
-  }
 }/*# sourceMappingURL=main.css.map */
