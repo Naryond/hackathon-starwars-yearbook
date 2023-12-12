@@ -1,0 +1,30 @@
+@use "./variables" as *;
+@use "./typography";
+
+.header {
+  background-color: $primary-background-color;
+
+  &__title {
+    color: $primary-font-color;
+    font-family: SF-distant;
+    font-style: normal;
+    margin: 0;
+    font-size: 2.5rem;
+    text-align: center;
+    padding: 1rem 0;
+  }
+}
+
+.nav {
+  &__list {
+    list-style: none;
+    display: flex;
+    justify-content: space-around;
+    padding: 0.5rem 0;
+    margin: 0;
+  }
+  &__list-item {
+    color: $primary-font-color;
+    text-decoration: 0;
+  }
+}

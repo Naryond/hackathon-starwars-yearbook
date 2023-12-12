@@ -1,0 +1,7 @@
+@use "./variables" as *;
+
+.main-container {
+  background-image: url(../../assets/images/space-background.jpeg);
+  background-position: center;
+  background-size: cover;
+}
