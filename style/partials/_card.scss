@@ -5,17 +5,24 @@
   display: flex;
   justify-content: center;
   flex-direction: column;
-  background-color: rgba(255, 255, 255, 0.3);
+  background-color: rgba(0, 0, 0, 0.6);
   padding: 1rem;
   margin: 1rem;
-  border-radius: 5px;
+  border-radius: 7px;
   &__logo-name {
     text-align: center;
+    font-family: SF-distant-Outline;
+    font-size: 1.2rem;
   }
   &__logo-image {
-    width: 5rem;
+    width: 6rem;
+    margin: 0.5rem;
   }
   &__subcontainer {
     display: flex;
+  }
+  &__description {
+    padding: 0.5rem;
+    letter-spacing: 1.5px;
   }
 }
