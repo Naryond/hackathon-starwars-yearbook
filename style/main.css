@@ -59,7 +59,8 @@ body {
 }
 .nav__list-item {
   color: #ffe81f;
-  text-decoration: 0;
+  -webkit-text-decoration: 0;
+          text-decoration: 0;
 }
 
 .card {
